@@ -1,4 +1,5 @@
 This project is for creating individual image files for Chu Shogi pieces
+
 Or more in general: Shogi variant pieces
 
 The steps in this proces are:
