@@ -18,8 +18,8 @@ class ChuPieceMaker():
         self.tolerance = 4
         self.kanji_data = None
         self.mycolouredtemplate = None
-        self.fullsquarewidth = 592
-        self.fullsquareheight = 646
+        self.fullsquarewidth = 542
+        self.fullsquareheight = 590
         self.piececolor = (214, 181, 105)
         self.boardcolor = (243, 226, 171)
 
@@ -129,9 +129,9 @@ class ChuPieceMaker():
             usefontcolor = (255, 0, 0)
         else:
             usefontcolor = (0, 0, 0)
-        mypieceimage = self.resize_image(self.mycolouredtemplate, 437, 437)
+        mypieceimage = self.resize_image(self.mycolouredtemplate, 387, 387)
         mypieceimage = self.enlargesquare(mypieceimage, self.fullsquarewidth, self.fullsquareheight, self.boardcolor)
-        self.put_kanji(pimage=mypieceimage, x=195, y=331, piecename=piecename,
+        self.put_kanji(pimage=mypieceimage, x=170, y=306, piecename=piecename,
                                 fontsize=187, fontcolor=usefontcolor, single_kanji=True)
         if rotate == True:
             mypieceimage = mypieceimage.rotate(180)
@@ -143,9 +143,9 @@ class ChuPieceMaker():
             usefontcolor = (255, 0, 0)
         else:
             usefontcolor = (0, 0, 0)
-        mypieceimage = self.resize_image(self.mycolouredtemplate, 437, 437)
+        mypieceimage = self.resize_image(self.mycolouredtemplate, 387, 387)
         mypieceimage = self.enlargesquare(mypieceimage, self.fullsquarewidth, self.fullsquareheight, self.boardcolor)
-        self.put_kanji(pimage=mypieceimage, x=214, y=231, piecename=piecename,
+        self.put_kanji(pimage=mypieceimage, x=189, y=211, piecename=piecename,
                                 fontsize=166, fontcolor=usefontcolor)
         if rotate == True:
             mypieceimage = mypieceimage.rotate(180)
@@ -157,9 +157,9 @@ class ChuPieceMaker():
             usefontcolor = (255, 0, 0)
         else:
             usefontcolor = (0, 0, 0)
-        mypieceimage = self.resize_image(self.mycolouredtemplate, 439, 479)
+        mypieceimage = self.resize_image(self.mycolouredtemplate, 389, 429)
         mypieceimage = self.enlargesquare(mypieceimage, self.fullsquarewidth, self.fullsquareheight, self.boardcolor)
-        self.put_kanji(pimage=mypieceimage, x=213, y=210, piecename=piecename,
+        self.put_kanji(pimage=mypieceimage, x=188, y=190, piecename=piecename,
                                 fontsize=170, fontcolor=usefontcolor)
         if rotate == True:
             mypieceimage = mypieceimage.rotate(180)
@@ -171,9 +171,9 @@ class ChuPieceMaker():
             usefontcolor = (255, 0, 0)
         else:
             usefontcolor = (0, 0, 0)
-        mypieceimage = self.resize_image(self.mycolouredtemplate, 479, 479)
+        mypieceimage = self.resize_image(self.mycolouredtemplate, 429, 429)
         mypieceimage = self.enlargesquare(mypieceimage, self.fullsquarewidth, self.fullsquareheight, self.boardcolor)
-        self.put_kanji(pimage=mypieceimage, x=213, y=210, piecename=piecename,
+        self.put_kanji(pimage=mypieceimage, x=188, y=190, piecename=piecename,
                                 fontsize=170, fontcolor=usefontcolor)
         if rotate == True:
             mypieceimage = mypieceimage.rotate(180)
@@ -185,9 +185,9 @@ class ChuPieceMaker():
             usefontcolor = (255, 0, 0)
         else:
             usefontcolor = (0, 0, 0)
-        mypieceimage = self.resize_image(self.mycolouredtemplate, 526, 526)
+        mypieceimage = self.resize_image(self.mycolouredtemplate, 476, 476)
         mypieceimage = self.enlargesquare(mypieceimage, self.fullsquarewidth, self.fullsquareheight, self.boardcolor)
-        self.put_kanji(pimage=mypieceimage, x=196, y=167, piecename=piecename,
+        self.put_kanji(pimage=mypieceimage, x=171, y=152, piecename=piecename,
                                 fontsize=187, fontcolor=usefontcolor)
         if rotate == True:
             mypieceimage = mypieceimage.rotate(180)
@@ -199,9 +199,9 @@ class ChuPieceMaker():
             usefontcolor = (255, 0, 0)
         else:
             usefontcolor = (0, 0, 0)
-        mypieceimage = self.resize_image(self.mycolouredtemplate, 592, 592)
+        mypieceimage = self.resize_image(self.mycolouredtemplate, 542, 542)
         mypieceimage = self.enlargesquare(mypieceimage, self.fullsquarewidth, self.fullsquareheight, self.boardcolor)
-        self.put_kanji(pimage=mypieceimage, x=191, y=128, piecename=piecename,
+        self.put_kanji(pimage=mypieceimage, x=166, y=108, piecename=piecename,
                                 fontsize=210, fontcolor=usefontcolor)
         if rotate == True:
             mypieceimage = mypieceimage.rotate(180)
