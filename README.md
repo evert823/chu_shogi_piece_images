@@ -9,5 +9,5 @@ The steps in this proces are:
 - Reshape piece
 - Reshape square
 - Put the kanji (red for promotion)
-- Revert the image if it is for Gote
+- Rotate the image if it is for Gote
 - Save the result
