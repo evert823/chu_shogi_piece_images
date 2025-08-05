@@ -1,6 +1,7 @@
 {
     "fullsquarewidth" : 542,
     "fullsquareheight" : 590,
+    "marge_to_2nd_kanji" : 15,
     "tiletypes" : [
         {
             "tiletypename" : "A_tokinstyle",
