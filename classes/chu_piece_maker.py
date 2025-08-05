@@ -18,6 +18,7 @@ class ChuPieceMaker():
         self.tolerance = 4
         self.kanji_data = None
         self.mycolouredtemplate = None
+        self.dimension_data = None
         self.fullsquarewidth = 542
         self.fullsquareheight = 590
         self.piececolor = (214, 181, 105)
@@ -27,6 +28,19 @@ class ChuPieceMaker():
         file1 = open(filename, encoding="utf-8")
         self.kanji_data = json.load(file1)
         file1.close()
+
+    def load_dimensions(self, filename):
+        file1 = open(filename, encoding="utf-8")
+        self.dimension_data = json.load(file1)
+        file1.close()
+        self.fullsquarewidth = self.dimension_data['fullsquarewidth']
+        self.fullsquareheight = self.dimension_data['fullsquareheight']
+        assert self.dimension_data['tiletypes'][0]['tiletypename'] == "A_tokinstyle"
+        assert self.dimension_data['tiletypes'][1]['tiletypename'] == "A"
+        assert self.dimension_data['tiletypes'][2]['tiletypename'] == "B"
+        assert self.dimension_data['tiletypes'][3]['tiletypename'] == "B_plus"
+        assert self.dimension_data['tiletypes'][4]['tiletypename'] == "C"
+        assert self.dimension_data['tiletypes'][5]['tiletypename'] == "D"
 
     def load_image(self, filename):
         #Under the hat, pillow handles formats like jpg, bmp, png
@@ -124,85 +138,29 @@ class ChuPieceMaker():
         resized_image = pimage.resize((new_width, new_height), resample=Image.LANCZOS)
         return resized_image
 
-    def create_piece_size_A_tokinstyle(self, piecename: str, rotate: bool = False, ispromoted: bool = False):
+    def create_piece_size_fromjson(self, piecename: str, rotate: bool = False,
+                                   ispromoted: bool = False, tiletypename : str = ""):
+        tiletype_idx = 0
+        while self.dimension_data['tiletypes'][tiletype_idx]['tiletypename'] != tiletypename:
+            tiletype_idx += 1
+        single_kanji = False
+        if tiletypename == "A_tokinstyle":
+            single_kanji = True
+
+        w = self.dimension_data['tiletypes'][tiletype_idx]['resized_template_width']
+        h = self.dimension_data['tiletypes'][tiletype_idx]['resized_template_height']
+        kx = self.dimension_data['tiletypes'][tiletype_idx]['put_kanji_x']
+        ky = self.dimension_data['tiletypes'][tiletype_idx]['put_kanji_y']
+        fs = self.dimension_data['tiletypes'][tiletype_idx]['font_size']
+
         #for tokin-style we always use single kanji
         if ispromoted:
             usefontcolor = (255, 0, 0)
         else:
             usefontcolor = (0, 0, 0)
-        mypieceimage = self.resize_image(self.mycolouredtemplate, 387, 387)
-        self.put_kanji(pimage=mypieceimage, x=93, y=130, piecename=piecename,
-                                fontsize=187, fontcolor=usefontcolor, single_kanji=True)
-        mypieceimage = self.enlargesquare(mypieceimage)
-        if rotate == True:
-            mypieceimage = mypieceimage.rotate(180)
-        return mypieceimage
-
-    def create_piece_size_A(self, piecename: str, rotate: bool = False, ispromoted: bool = False):
-        #size A is smallest, for pawn and go-between
-        if ispromoted:
-            usefontcolor = (255, 0, 0)
-        else:
-            usefontcolor = (0, 0, 0)
-        mypieceimage = self.resize_image(self.mycolouredtemplate, 387, 387)
-        self.put_kanji(pimage=mypieceimage, x=112, y=35, piecename=piecename,
-                                fontsize=166, fontcolor=usefontcolor)
-        mypieceimage = self.enlargesquare(mypieceimage)
-        if rotate == True:
-            mypieceimage = mypieceimage.rotate(180)
-        return mypieceimage
-
-    def create_piece_size_B(self, piecename: str, rotate: bool = False, ispromoted: bool = False):
-        #size B is for Lance, VM, SM and similar size
-        if ispromoted:
-            usefontcolor = (255, 0, 0)
-        else:
-            usefontcolor = (0, 0, 0)
-        mypieceimage = self.resize_image(self.mycolouredtemplate, 389, 429)
-        self.put_kanji(pimage=mypieceimage, x=112, y=56, piecename=piecename,
-                                fontsize=170, fontcolor=usefontcolor)
-        mypieceimage = self.enlargesquare(mypieceimage)
-        if rotate == True:
-            mypieceimage = mypieceimage.rotate(180)
-        return mypieceimage
-
-    def create_piece_size_B_plus(self, piecename: str, rotate: bool = False, ispromoted: bool = False):
-        #size B-plus is for Ferocious Leopard, Blind Tiger
-        if ispromoted:
-            usefontcolor = (255, 0, 0)
-        else:
-            usefontcolor = (0, 0, 0)
-        mypieceimage = self.resize_image(self.mycolouredtemplate, 429, 429)
-        self.put_kanji(pimage=mypieceimage, x=132, y=56, piecename=piecename,
-                                fontsize=170, fontcolor=usefontcolor)
-        mypieceimage = self.enlargesquare(mypieceimage)
-        if rotate == True:
-            mypieceimage = mypieceimage.rotate(180)
-        return mypieceimage
-
-    def create_piece_size_C(self, piecename: str, rotate: bool = False, ispromoted: bool = False):
-        #size C is for Rook, Bishop and similar size
-        if ispromoted:
-            usefontcolor = (255, 0, 0)
-        else:
-            usefontcolor = (0, 0, 0)
-        mypieceimage = self.resize_image(self.mycolouredtemplate, 476, 476)
-        self.put_kanji(pimage=mypieceimage, x=138, y=65, piecename=piecename,
-                                fontsize=187, fontcolor=usefontcolor)
-        mypieceimage = self.enlargesquare(mypieceimage)
-        if rotate == True:
-            mypieceimage = mypieceimage.rotate(180)
-        return mypieceimage
-
-    def create_piece_size_D(self, piecename: str, rotate: bool = False, ispromoted: bool = False):
-        #size D is for largest - Queen, King
-        if ispromoted:
-            usefontcolor = (255, 0, 0)
-        else:
-            usefontcolor = (0, 0, 0)
-        mypieceimage = self.resize_image(self.mycolouredtemplate, 542, 542)
-        self.put_kanji(pimage=mypieceimage, x=166, y=87, piecename=piecename,
-                                fontsize=210, fontcolor=usefontcolor)
+        mypieceimage = self.resize_image(self.mycolouredtemplate, w, h)
+        self.put_kanji(pimage=mypieceimage, x=kx, y=ky, piecename=piecename,
+                                fontsize=fs, fontcolor=usefontcolor, single_kanji=single_kanji)
         mypieceimage = self.enlargesquare(mypieceimage)
         if rotate == True:
             mypieceimage = mypieceimage.rotate(180)

@@ -21,31 +21,33 @@ def imagefilename(piecename: str, rotate: bool = False, ispromoted: bool = False
     return result
 
 def create_piece_size_A_tokinstyle(piecename: str, rotate: bool = False, ispromoted: bool = False):
-    mypieceimage = MyChuPieceMaker.create_piece_size_A_tokinstyle(piecename=piecename, rotate=rotate, ispromoted=ispromoted)
+    mypieceimage = MyChuPieceMaker.create_piece_size_fromjson(piecename=piecename, rotate=rotate, ispromoted=ispromoted, tiletypename="A_tokinstyle")
     MyChuPieceMaker.save_image(mypieceimage, imagefilename(piecename=piecename, rotate=rotate, ispromoted=ispromoted))
 
 def create_piece_size_A(piecename: str, rotate: bool = False, ispromoted: bool = False):
-    mypieceimage = MyChuPieceMaker.create_piece_size_A(piecename=piecename, rotate=rotate, ispromoted=ispromoted)
+    mypieceimage = MyChuPieceMaker.create_piece_size_fromjson(piecename=piecename, rotate=rotate, ispromoted=ispromoted, tiletypename="A")
     MyChuPieceMaker.save_image(mypieceimage, imagefilename(piecename=piecename, rotate=rotate, ispromoted=ispromoted))
 
 def create_piece_size_B(piecename: str, rotate: bool = False, ispromoted: bool = False):
-    mypieceimage = MyChuPieceMaker.create_piece_size_B(piecename=piecename, rotate=rotate, ispromoted=ispromoted)
+    mypieceimage = MyChuPieceMaker.create_piece_size_fromjson(piecename=piecename, rotate=rotate, ispromoted=ispromoted, tiletypename="B")
     MyChuPieceMaker.save_image(mypieceimage, imagefilename(piecename=piecename, rotate=rotate, ispromoted=ispromoted))
 
 def create_piece_size_B_plus(piecename: str, rotate: bool = False, ispromoted: bool = False):
-    mypieceimage = MyChuPieceMaker.create_piece_size_B_plus(piecename=piecename, rotate=rotate, ispromoted=ispromoted)
+    mypieceimage = MyChuPieceMaker.create_piece_size_fromjson(piecename=piecename, rotate=rotate, ispromoted=ispromoted, tiletypename="B_plus")
     MyChuPieceMaker.save_image(mypieceimage, imagefilename(piecename=piecename, rotate=rotate, ispromoted=ispromoted))
 
 def create_piece_size_C(piecename: str, rotate: bool = False, ispromoted: bool = False):
-    mypieceimage = MyChuPieceMaker.create_piece_size_C(piecename=piecename, rotate=rotate, ispromoted=ispromoted)
+    mypieceimage = MyChuPieceMaker.create_piece_size_fromjson(piecename=piecename, rotate=rotate, ispromoted=ispromoted, tiletypename="C")
     MyChuPieceMaker.save_image(mypieceimage, imagefilename(piecename=piecename, rotate=rotate, ispromoted=ispromoted))
 
 def create_piece_size_D(piecename: str, rotate: bool = False, ispromoted: bool = False):
-    mypieceimage = MyChuPieceMaker.create_piece_size_D(piecename=piecename, rotate=rotate, ispromoted=ispromoted)
+    mypieceimage = MyChuPieceMaker.create_piece_size_fromjson(piecename=piecename, rotate=rotate, ispromoted=ispromoted, tiletypename="D")
     MyChuPieceMaker.save_image(mypieceimage, imagefilename(piecename=piecename, rotate=rotate, ispromoted=ispromoted))
 
 MyChuPieceMaker = ChuPieceMaker()
 
+MyChuPieceMaker.load_dimensions(".\\input\\dimensions_542_590.json")
+print(f"Loaded dimension data for tiletypes {[item['tiletypename'] for item in MyChuPieceMaker.dimension_data['tiletypes']]}")
 MyChuPieceMaker.load_kanji(".\\kanji\\kanji.json")
 print(f"Loaded kanji for {len(MyChuPieceMaker.kanji_data)} pieces")
 myimage = MyChuPieceMaker.load_image(f".\\input\\shogipiecetemplate.png")
