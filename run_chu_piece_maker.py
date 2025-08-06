@@ -47,7 +47,9 @@ def create_piece_size_D(piecename: str, rotate: bool = False, ispromoted: bool =
 MyChuPieceMaker = ChuPieceMaker()
 
 #MyChuPieceMaker.load_dimensions(".\\input\\dimensions_542_590.json")
-MyChuPieceMaker.load_dimensions(".\\input\\dimensions_73_79.json")
+#MyChuPieceMaker.load_dimensions(".\\input\\dimensions_542_590_single_kanji.json")
+MyChuPieceMaker.load_dimensions(".\\input\\dimensions_73_79_single_kanji.json")
+#MyChuPieceMaker.load_dimensions(".\\input\\dimensions_73_79.json")
 print(f"Loaded dimension data for tiletypes {[item['tiletypename'] for item in MyChuPieceMaker.dimension_data['tiletypes']]}")
 MyChuPieceMaker.load_kanji(".\\kanji\\kanji.json")
 print(f"Loaded kanji for {len(MyChuPieceMaker.kanji_data)} pieces")

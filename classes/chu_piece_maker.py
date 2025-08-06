@@ -42,6 +42,21 @@ class ChuPieceMaker():
         assert self.dimension_data['tiletypes'][4]['tiletypename'] == "C"
         assert self.dimension_data['tiletypes'][5]['tiletypename'] == "D"
 
+    def resize_and_save_dimensions(self, filename="", scalefactor=7.4):
+        self.dimension_data['fullsquarewidth'] = int(self.dimension_data['fullsquarewidth'] // scalefactor)
+        self.dimension_data['fullsquareheight'] = int(self.dimension_data['fullsquareheight'] // scalefactor)
+        self.dimension_data['marge_to_2nd_kanji'] = int(self.dimension_data['marge_to_2nd_kanji'] // scalefactor)
+        for item in self.dimension_data['tiletypes']:
+            item['resized_template_width'] = int(item['resized_template_width'] // scalefactor)
+            item['resized_template_height'] = int(item['resized_template_height'] // scalefactor)
+            item['put_kanji_x'] = int(item['put_kanji_x'] // scalefactor)
+            item['put_kanji_y'] = int(item['put_kanji_y'] // scalefactor)
+            item['font_size'] = int(item['font_size'] // scalefactor)
+
+        file2 = open(filename, 'w', encoding="utf-8")
+        json.dump(self.dimension_data, file2, ensure_ascii=False, indent=4)
+        file2.close()
+
     def load_image(self, filename):
         #Under the hat, pillow handles formats like jpg, bmp, png
         myimage = Image.open(filename, mode='r')

@@ -1,0 +1,61 @@
+{
+    "fullsquarewidth" : 542,
+    "fullsquareheight" : 590,
+    "marge_to_2nd_kanji" : 15,
+    "tiletypes" : [
+        {
+            "tiletypename" : "A_tokinstyle",
+            "single_kanji" : true,
+            "resized_template_width" : 387,
+            "resized_template_height" : 387,
+            "put_kanji_x" : 93,
+            "put_kanji_y" : 130,
+            "font_size" : 187
+        },
+        {
+            "tiletypename" : "A",
+            "single_kanji" : true,
+            "resized_template_width" : 387,
+            "resized_template_height" : 387,
+            "put_kanji_x" : 93,
+            "put_kanji_y" : 130,
+            "font_size" : 187
+        },
+        {
+            "tiletypename" : "B",
+            "single_kanji" : true,
+            "resized_template_width" : 389,
+            "resized_template_height" : 429,
+            "put_kanji_x" : 93,
+            "put_kanji_y" : 144,
+            "font_size" : 187
+        },
+        {
+            "tiletypename" : "B_plus",
+            "single_kanji" : true,
+            "resized_template_width" : 429,
+            "resized_template_height" : 429,
+            "put_kanji_x" : 103,
+            "put_kanji_y" : 144,
+            "font_size" : 207
+        },
+        {
+            "tiletypename" : "C",
+            "single_kanji" : true,
+            "resized_template_width" : 476,
+            "resized_template_height" : 476,
+            "put_kanji_x" : 114,
+            "put_kanji_y" : 159,
+            "font_size" : 230
+        },
+        {
+            "tiletypename" : "D",
+            "single_kanji" : true,
+            "resized_template_width" : 542,
+            "resized_template_height" : 542,
+            "put_kanji_x" : 130,
+            "put_kanji_y" : 182,
+            "font_size" : 261
+        }
+    ]
+}
