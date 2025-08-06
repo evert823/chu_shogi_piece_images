@@ -127,10 +127,10 @@ class ChuPieceMaker():
         mymarge = self.dimension_data['marge_to_2nd_kanji']
         draw = ImageDraw.Draw(pimage)
         font = ImageFont.truetype("C:\\Windows\\Fonts\\simsun.ttc", fontsize)
-        mytext = self.kanji_data[piecename][0]
+        mytext = self.kanji_data[piecename]['full_kanji'][0]
         draw.text((x, y),mytext,fontcolor,font=font)
         if single_kanji == False:
-            mytext = self.kanji_data[piecename][1]
+            mytext = self.kanji_data[piecename]['full_kanji'][1]
             draw.text((x, y + fontsize + mymarge),mytext,fontcolor,font=font)
 
     def resize_image(self, pimage: Image, new_width: int, new_height: int):
