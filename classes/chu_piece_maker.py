@@ -144,15 +144,13 @@ class ChuPieceMaker():
         tiletype_idx = 0
         while self.dimension_data['tiletypes'][tiletype_idx]['tiletypename'] != tiletypename:
             tiletype_idx += 1
-        single_kanji = False
-        if tiletypename == "A_tokinstyle":
-            single_kanji = True
 
         w = self.dimension_data['tiletypes'][tiletype_idx]['resized_template_width']
         h = self.dimension_data['tiletypes'][tiletype_idx]['resized_template_height']
         kx = self.dimension_data['tiletypes'][tiletype_idx]['put_kanji_x']
         ky = self.dimension_data['tiletypes'][tiletype_idx]['put_kanji_y']
         fs = self.dimension_data['tiletypes'][tiletype_idx]['font_size']
+        single_kanji = self.dimension_data['tiletypes'][tiletype_idx]['single_kanji']
 
         #for tokin-style we always use single kanji
         if ispromoted:

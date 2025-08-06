@@ -5,6 +5,7 @@
     "tiletypes" : [
         {
             "tiletypename" : "A_tokinstyle",
+            "single_kanji" : true,
             "resized_template_width" : 387,
             "resized_template_height" : 387,
             "put_kanji_x" : 93,
@@ -13,6 +14,7 @@
         },
         {
             "tiletypename" : "A",
+            "single_kanji" : false,
             "resized_template_width" : 387,
             "resized_template_height" : 387,
             "put_kanji_x" : 112,
@@ -21,6 +23,7 @@
         },
         {
             "tiletypename" : "B",
+            "single_kanji" : false,
             "resized_template_width" : 389,
             "resized_template_height" : 429,
             "put_kanji_x" : 112,
@@ -29,6 +32,7 @@
         },
         {
             "tiletypename" : "B_plus",
+            "single_kanji" : false,
             "resized_template_width" : 429,
             "resized_template_height" : 429,
             "put_kanji_x" : 132,
@@ -37,6 +41,7 @@
         },
         {
             "tiletypename" : "C",
+            "single_kanji" : false,
             "resized_template_width" : 476,
             "resized_template_height" : 476,
             "put_kanji_x" : 138,
@@ -45,6 +50,7 @@
         },
         {
             "tiletypename" : "D",
+            "single_kanji" : false,
             "resized_template_width" : 542,
             "resized_template_height" : 542,
             "put_kanji_x" : 166,
