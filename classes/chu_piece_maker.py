@@ -21,8 +21,10 @@ class ChuPieceMaker():
         self.dimension_data = None
         self.fullsquarewidth = 542
         self.fullsquareheight = 590
-        self.piececolor = (214, 181, 105)
-        self.boardcolor = (243, 226, 171)
+        #self.piececolor = (214, 181, 105)
+        self.piececolor = (250, 229, 177)
+        #self.boardcolor = (243, 226, 171)
+        self.boardcolor = (204, 85, 34)
 
     def load_kanji(self, filename):
         file1 = open(filename, encoding="utf-8")
