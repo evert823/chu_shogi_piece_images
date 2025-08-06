@@ -141,8 +141,12 @@ class ChuPieceMaker():
                   fontsize: int, fontcolor: tuple, single_kanji=False):
         mymarge = self.dimension_data['marge_to_2nd_kanji']
         draw = ImageDraw.Draw(pimage)
-        #font = ImageFont.truetype("C:\\Windows\\Fonts\\msgothic.ttc", fontsize)
-        font = ImageFont.truetype("C:\\Windows\\Fonts\\YuGothB.ttc", fontsize)
+
+        if fontsize <= 22:
+            font = ImageFont.truetype("C:\\Windows\\Fonts\\YuGothB.ttc", fontsize)
+        else:
+            font = ImageFont.truetype("C:\\Windows\\Fonts\\msgothic.ttc", fontsize)
+
         if single_kanji == True:
             mytext = self.kanji_data[piecename]['single_kanji'][0]
             draw.text((x, y),mytext,fontcolor,font=font)
