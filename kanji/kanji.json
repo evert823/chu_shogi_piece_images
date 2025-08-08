@@ -378,5 +378,113 @@
     "wood_general": {
         "full_kanji": "木将",
         "single_kanji": "木"
+    },
+    "deva": {
+        "full_kanji": "提婆",
+        "single_kanji": "."
+    },
+    "dark_spirit": {
+        "full_kanji": "無明",
+        "single_kanji": "."
+    },
+    "tile_general": {
+        "full_kanji": "瓦将",
+        "single_kanji": "."
+    },
+    "earth_general": {
+        "full_kanji": "土将",
+        "single_kanji": "."
+    },
+    "coiled_serpent": {
+        "full_kanji": "蟠蛇",
+        "single_kanji": "."
+    },
+    "reclining_dragon": {
+        "full_kanji": "臥龍",
+        "single_kanji": "."
+    },
+    "chinese_cock": {
+        "full_kanji": "淮鶏",
+        "single_kanji": "."
+    },
+    "old_monkey": {
+        "full_kanji": "古猿",
+        "single_kanji": "."
+    },
+    "blind_bear": {
+        "full_kanji": "盲熊",
+        "single_kanji": "."
+    },
+    "wrestler": {
+        "full_kanji": "力士",
+        "single_kanji": "."
+    },
+    "guardian_of_the_gods": {
+        "full_kanji": "金剛",
+        "single_kanji": "."
+    },
+    "buddhist_devil": {
+        "full_kanji": "羅刹",
+        "single_kanji": "."
+    },
+    "donkey": {
+        "full_kanji": "驢馬",
+        "single_kanji": "."
+    },
+    "capricorn": {
+        "full_kanji": "摩羯",
+        "single_kanji": "."
+    },
+    "side_flier": {
+        "full_kanji": "横飛",
+        "single_kanji": "."
+    },
+    "emperor": {
+        "full_kanji": "自在",
+        "single_kanji": "."
+    },
+    "peacock": {
+        "full_kanji": "孔雀",
+        "single_kanji": "."
+    },
+    "soldier": {
+        "full_kanji": "兵士",
+        "single_kanji": "."
+    },
+    "vermillion_sparrow": {
+        "full_kanji": "朱雀",
+        "single_kanji": "."
+    },
+    "turtle_snake": {
+        "full_kanji": "玄武",
+        "single_kanji": "."
+    },
+    "side_dragon": {
+        "full_kanji": "横龍",
+        "single_kanji": "."
+    },
+    "golden_deer": {
+        "full_kanji": "金鹿",
+        "single_kanji": "."
+    },
+    "silver_rabbit": {
+        "full_kanji": "銀兎",
+        "single_kanji": "."
+    },
+    "fierce_eagle": {
+        "full_kanji": "猛鷲",
+        "single_kanji": "."
+    },
+    "teaching_king": {
+        "full_kanji": "教王",
+        "single_kanji": "."
+    },
+    "buddhist_spirit": {
+        "full_kanji": "法性",
+        "single_kanji": "."
+    },
+    "rams_head_soldier": {
+        "full_kanji": "羊兵",
+        "single_kanji": "."
     }
 }
