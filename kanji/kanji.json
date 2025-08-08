@@ -210,5 +210,173 @@
     "violent_ox": {
         "full_kanji": "猛牛",
         "single_kanji": "猛"
+    },
+    "blind_monkey": {
+        "full_kanji": "盲猿",
+        "single_kanji": "猿"
+    },
+    "blue_dragon": {
+        "full_kanji": "青龍",
+        "single_kanji": "青"
+    },
+    "wooden_dove": {
+        "full_kanji": "鳩槃",
+        "single_kanji": "鳩"
+    },
+    "eastern_barbarian": {
+        "full_kanji": "東夷",
+        "single_kanji": "東"
+    },
+    "enchanted_badger": {
+        "full_kanji": "変狸",
+        "single_kanji": "狸"
+    },
+    "enchanted_fox": {
+        "full_kanji": "変狐",
+        "single_kanji": "狐"
+    },
+    "flying_horse": {
+        "full_kanji": "馬麟",
+        "single_kanji": "麟"
+    },
+    "fragrant_elephant": {
+        "full_kanji": "香象",
+        "single_kanji": "象"
+    },
+    "free_demon": {
+        "full_kanji": "奔鬼",
+        "single_kanji": "鬼"
+    },
+    "free_dream_eater": {
+        "full_kanji": "奔獏",
+        "single_kanji": "獏"
+    },
+    "furious_fiend": {
+        "full_kanji": "奮迅",
+        "single_kanji": "迅"
+    },
+    "golden_bird": {
+        "full_kanji": "金翅",
+        "single_kanji": "翅"
+    },
+    "great_dragon": {
+        "full_kanji": "大龍",
+        "single_kanji": "大"
+    },
+    "great_elephant": {
+        "full_kanji": "大象",
+        "single_kanji": "–"
+    },
+    "hook_mover": {
+        "full_kanji": "鉤行",
+        "single_kanji": "行"
+    },
+    "howling_dog": {
+        "full_kanji": "𠵇犬",
+        "single_kanji": "𠵇"
+    },
+    "left_chariot": {
+        "full_kanji": "左車",
+        "single_kanji": "–"
+    },
+    "left_general": {
+        "full_kanji": "左将",
+        "single_kanji": "–"
+    },
+    "lion_dog": {
+        "full_kanji": "狛犬",
+        "single_kanji": "狛"
+    },
+    "long_nosed_goblin": {
+        "full_kanji": "天狗",
+        "single_kanji": "天"
+    },
+    "mountain_witch": {
+        "full_kanji": "山母",
+        "single_kanji": "母"
+    },
+    "neighboring_king": {
+        "full_kanji": "近王",
+        "single_kanji": "近"
+    },
+    "northern_barbarian": {
+        "full_kanji": "北狄",
+        "single_kanji": "北"
+    },
+    "old_kite": {
+        "full_kanji": "古鵄",
+        "single_kanji": "古"
+    },
+    "old_rat": {
+        "full_kanji": "老鼠",
+        "single_kanji": "鼠"
+    },
+    "poisonous_snake": {
+        "full_kanji": "毒蛇",
+        "single_kanji": "蛇"
+    },
+    "prancing_stag": {
+        "full_kanji": "踊鹿",
+        "single_kanji": "鹿"
+    },
+    "racing_chariot": {
+        "full_kanji": "走車",
+        "single_kanji": "走"
+    },
+    "right_chariot": {
+        "full_kanji": "右車",
+        "single_kanji": "–"
+    },
+    "right_general": {
+        "full_kanji": "右将",
+        "single_kanji": "–"
+    },
+    "rushing_bird": {
+        "full_kanji": "行鳥",
+        "single_kanji": "鳥"
+    },
+    "savage_tiger": {
+        "full_kanji": "猛虎",
+        "single_kanji": "虎"
+    },
+    "she_devil": {
+        "full_kanji": "夜叉",
+        "single_kanji": "叉"
+    },
+    "southern_barbarian": {
+        "full_kanji": "南蛮",
+        "single_kanji": "南"
+    },
+    "square_mover": {
+        "full_kanji": "方行",
+        "single_kanji": "方"
+    },
+    "standard_bearer": {
+        "full_kanji": "前旗",
+        "single_kanji": "前"
+    },
+    "violent_bear": {
+        "full_kanji": "猛熊",
+        "single_kanji": "熊"
+    },
+    "western_barbarian": {
+        "full_kanji": "西戎",
+        "single_kanji": "西"
+    },
+    "white_elephant": {
+        "full_kanji": "白象",
+        "single_kanji": "–"
+    },
+    "white_tiger": {
+        "full_kanji": "白虎",
+        "single_kanji": "–"
+    },
+    "wizard_stork": {
+        "full_kanji": "仙鶴",
+        "single_kanji": "仙"
+    },
+    "wood_general": {
+        "full_kanji": "木将",
+        "single_kanji": "木"
     }
 }
