@@ -335,6 +335,7 @@ print("We have created the coloured template")
 create_complete_chu_set()
 add_for_tenjiku()
 add_for_dai()
+add_for_dai_dai()
 print("We have created the image files")
 
 
