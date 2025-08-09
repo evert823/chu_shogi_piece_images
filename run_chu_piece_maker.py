@@ -48,6 +48,7 @@ def add_for_dai_dai():
     create_piece_size_B(piecename="right_chariot", rotate=True)
     create_piece_size_B(piecename="blue_dragon")
     create_piece_size_B(piecename="blue_dragon", rotate=True)
+    #TODO The 1st Kanji for howling dog isn't even reflecting in our font
     create_piece_size_B_plus(piecename="howling_dog")
     create_piece_size_B_plus(piecename="howling_dog", rotate=True)
     create_piece_size_B(piecename="left_chariot")
