@@ -151,6 +151,9 @@ class ChuPieceMaker():
 
         if single_kanji == True:
             mytext = self.kanji_data[piecename]['single_kanji'][0]
+            if mytext in ['-', '.', ''] and self.kanji_data[piecename]['full_kanji'] != '':
+                mytext = self.kanji_data[piecename]['full_kanji'][0]
+            
             draw.text((x, y),mytext,fontcolor,font=font)
         elif len(self.kanji_data[piecename]['full_kanji']) > 2:
             #FOR NOW this only works for tiletype C

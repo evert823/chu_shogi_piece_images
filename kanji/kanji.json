@@ -265,7 +265,7 @@
     },
     "great_elephant": {
         "full_kanji": "大象",
-        "single_kanji": "–"
+        "single_kanji": "-"
     },
     "hook_mover": {
         "full_kanji": "鉤行",
@@ -277,11 +277,11 @@
     },
     "left_chariot": {
         "full_kanji": "左車",
-        "single_kanji": "–"
+        "single_kanji": "-"
     },
     "left_general": {
         "full_kanji": "左将",
-        "single_kanji": "–"
+        "single_kanji": "-"
     },
     "lion_dog": {
         "full_kanji": "狛犬",
@@ -325,11 +325,11 @@
     },
     "right_chariot": {
         "full_kanji": "右車",
-        "single_kanji": "–"
+        "single_kanji": "-"
     },
     "right_general": {
         "full_kanji": "右将",
-        "single_kanji": "–"
+        "single_kanji": "-"
     },
     "rushing_bird": {
         "full_kanji": "行鳥",
@@ -365,11 +365,11 @@
     },
     "white_elephant": {
         "full_kanji": "白象",
-        "single_kanji": "–"
+        "single_kanji": "-"
     },
     "white_tiger": {
         "full_kanji": "白虎",
-        "single_kanji": "–"
+        "single_kanji": "-"
     },
     "wizard_stork": {
         "full_kanji": "仙鶴",
