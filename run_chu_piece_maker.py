@@ -43,6 +43,22 @@ def create_piece_size_D(piecename: str, rotate: bool = False, ispromoted: bool =
     mypieceimage = MyChuPieceMaker.create_piece_size_fromjson(piecename=piecename, rotate=rotate, ispromoted=ispromoted, tiletypename="D")
     MyChuPieceMaker.save_image(mypieceimage, imagefilename(piecename=piecename, rotate=rotate, ispromoted=ispromoted))
 
+def add_for_dai():
+    create_piece_size_C(piecename="angry_boar")
+    create_piece_size_C(piecename="angry_boar", rotate=True)
+    create_piece_size_C(piecename="cat_sword")
+    create_piece_size_C(piecename="cat_sword", rotate=True)
+    create_piece_size_C(piecename="evil_wolf")
+    create_piece_size_C(piecename="evil_wolf", rotate=True)
+    create_piece_size_C(piecename="flying_dragon")
+    create_piece_size_C(piecename="flying_dragon", rotate=True)
+    create_piece_size_C(piecename="stone_general")
+    create_piece_size_C(piecename="stone_general", rotate=True)
+    create_piece_size_C(piecename="violent_ox")
+    create_piece_size_C(piecename="violent_ox", rotate=True)
+    create_piece_size_C(piecename="gold_general", ispromoted=True)
+    create_piece_size_C(piecename="gold_general", rotate=True, ispromoted=True)
+
 def add_for_tenjiku():
     create_piece_size_A_tokinstyle(piecename="dog")
     create_piece_size_A_tokinstyle(piecename="dog", rotate=True)
@@ -136,9 +152,7 @@ def create_complete_chu_set():
     create_piece_size_C(piecename="dragon_horse", rotate=True)
     create_piece_size_C(piecename="dragon_horse", rotate=True, ispromoted=True)
     create_piece_size_C(piecename="gold_general")
-    create_piece_size_A(piecename="gold_general", ispromoted=True)
     create_piece_size_C(piecename="gold_general", rotate=True)
-    create_piece_size_A(piecename="gold_general", rotate=True, ispromoted=True)
     create_piece_size_B_plus(piecename="blind_tiger")
     create_piece_size_B_plus(piecename="blind_tiger", rotate=True)
     create_piece_size_C(piecename="dragon_king")
@@ -204,6 +218,7 @@ MyChuPieceMaker.mycolouredtemplate = MyChuPieceMaker.fill_from_point(myimage, 4,
 print("We have created the coloured template")
 create_complete_chu_set()
 add_for_tenjiku()
+add_for_dai()
 print("We have created the image files")
 
 
@@ -219,4 +234,5 @@ MyChuPieceMaker.mycolouredtemplate = MyChuPieceMaker.fill_from_point(myimage, 4,
 print("We have created the coloured template")
 create_complete_chu_set()
 add_for_tenjiku()
+add_for_dai()
 print("We have created the image files")
