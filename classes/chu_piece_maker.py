@@ -149,6 +149,9 @@ class ChuPieceMaker():
         else:
             font = ImageFont.truetype("C:\\Windows\\Fonts\\msgothic.ttc", fontsize)
 
+        #For this to work we had to install Japanese supplementary fonts on Windows
+        font_escape = ImageFont.truetype("C:\\Windows\\Fonts\\mingliub.ttc", fontsize)
+
         if single_kanji == True:
             mytext = self.kanji_data[piecename]['single_kanji'][0]
             if mytext in ['-', '.', ''] and self.kanji_data[piecename]['full_kanji'] != '':
@@ -169,8 +172,12 @@ class ChuPieceMaker():
             mytext = self.kanji_data[piecename]['full_kanji'][2]
             draw.text((x + 4, y2 + 2 * (f2 + mymarge)),mytext,fontcolor,font=font)
         else:
-            mytext = self.kanji_data[piecename]['full_kanji'][0]
-            draw.text((x, y),mytext,fontcolor,font=font)
+            if piecename in ["howling_dog"]:
+                mytext = self.kanji_data[piecename]['full_kanji'][0]
+                draw.text((x, y),mytext,fontcolor,font=font_escape)
+            else:
+                mytext = self.kanji_data[piecename]['full_kanji'][0]
+                draw.text((x, y),mytext,fontcolor,font=font)
             mytext = self.kanji_data[piecename]['full_kanji'][1]
             draw.text((x, y + fontsize + mymarge),mytext,fontcolor,font=font)
 
