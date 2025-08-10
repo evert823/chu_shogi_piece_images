@@ -483,8 +483,72 @@
         "full_kanji": "法性",
         "single_kanji": "."
     },
+    "bat": {
+        "full_kanji": "蝙蝠",
+        "single_kanji": "."
+    },
     "rams_head_soldier": {
         "full_kanji": "羊兵",
+        "single_kanji": "."
+    },
+    "free_bear": {
+        "full_kanji": "奔熊",
+        "single_kanji": "."
+    },
+    "free_cat": {
+        "full_kanji": "奔猫",
+        "single_kanji": "."
+    },
+    "free_copper": {
+        "full_kanji": "奔銅",
+        "single_kanji": "."
+    },
+    "free_dragon": {
+        "full_kanji": "奔龍",
+        "single_kanji": "."
+    },
+    "free_earth": {
+        "full_kanji": "奔土",
+        "single_kanji": "."
+    },
+    "free_goer": {
+        "full_kanji": "奔人",
+        "single_kanji": "."
+    },
+    "free_gold": {
+        "full_kanji": "奔金",
+        "single_kanji": "."
+    },
+    "free_iron": {
+        "full_kanji": "奔鉄",
+        "single_kanji": "."
+    },
+    "free_leopard": {
+        "full_kanji": "奔豹",
+        "single_kanji": "."
+    },
+    "free_serpent": {
+        "full_kanji": "奔蛇",
+        "single_kanji": "."
+    },
+    "free_silver": {
+        "full_kanji": "奔銀",
+        "single_kanji": "."
+    },
+    "free_stone": {
+        "full_kanji": "奔石",
+        "single_kanji": "."
+    },
+    "free_tiger": {
+        "full_kanji": "奔虎",
+        "single_kanji": "."
+    },
+    "free_tile": {
+        "full_kanji": "奔瓦",
+        "single_kanji": "."
+    },
+    "free_wolf": {
+        "full_kanji": "奔狼",
         "single_kanji": "."
     }
 }
