@@ -157,7 +157,10 @@ class ChuPieceMaker():
             if mytext in ['-', '.', ''] and self.kanji_data[piecename]['full_kanji'] != '':
                 mytext = self.kanji_data[piecename]['full_kanji'][0]
             
-            draw.text((x, y),mytext,fontcolor,font=font)
+            if piecename in ["howling_dog"]:
+                draw.text((x, y),mytext,fontcolor,font=font_escape)
+            else:
+                draw.text((x, y),mytext,fontcolor,font=font)
         elif len(self.kanji_data[piecename]['full_kanji']) > 2:
             #FOR NOW this only works for tiletype C
             #TODO properly handle kanji length 3 (Heavenly Tetrarch)
@@ -172,11 +175,10 @@ class ChuPieceMaker():
             mytext = self.kanji_data[piecename]['full_kanji'][2]
             draw.text((x + 4, y2 + 2 * (f2 + mymarge)),mytext,fontcolor,font=font)
         else:
+            mytext = self.kanji_data[piecename]['full_kanji'][0]
             if piecename in ["howling_dog"]:
-                mytext = self.kanji_data[piecename]['full_kanji'][0]
                 draw.text((x, y),mytext,fontcolor,font=font_escape)
             else:
-                mytext = self.kanji_data[piecename]['full_kanji'][0]
                 draw.text((x, y),mytext,fontcolor,font=font)
             mytext = self.kanji_data[piecename]['full_kanji'][1]
             draw.text((x, y + fontsize + mymarge),mytext,fontcolor,font=font)
