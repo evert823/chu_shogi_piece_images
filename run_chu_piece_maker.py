@@ -43,6 +43,27 @@ def create_piece_size_D(piecename: str, rotate: bool = False, ispromoted: bool =
     mypieceimage = MyChuPieceMaker.create_piece_size_fromjson(piecename=piecename, rotate=rotate, ispromoted=ispromoted, tiletypename="D")
     MyChuPieceMaker.save_image(mypieceimage, imagefilename(piecename=piecename, rotate=rotate, ispromoted=ispromoted))
 
+def add_for_tai():
+    create_piece_size_B(piecename="rams_head_soldier")
+    create_piece_size_B(piecename="rams_head_soldier", rotate=True)
+    create_piece_size_C(piecename="peacock")
+    create_piece_size_C(piecename="peacock", rotate=True)
+    create_piece_size_B(piecename="soldier")
+    create_piece_size_B(piecename="soldier", rotate=True)
+    create_piece_size_C(piecename="side_dragon")
+    create_piece_size_C(piecename="side_dragon", rotate=True)
+    create_piece_size_C(piecename="vermillion_sparrow")
+    create_piece_size_C(piecename="vermillion_sparrow", rotate=True)
+    create_piece_size_C(piecename="golden_deer")
+    create_piece_size_C(piecename="golden_deer", rotate=True)
+    #TODO In Tai it's silver_hare and in Taikyoku silver_rabbit
+    create_piece_size_C(piecename="silver_rabbit")
+    create_piece_size_C(piecename="silver_rabbit", rotate=True)
+    create_piece_size_C(piecename="fierce_eagle")
+    create_piece_size_C(piecename="fierce_eagle", rotate=True)
+    create_piece_size_B(piecename="turtle_snake")
+    create_piece_size_B(piecename="turtle_snake", rotate=True)
+
 def add_for_maka_dai_dai():
     create_piece_size_D(piecename="deva")
     create_piece_size_D(piecename="deva", rotate=True)
@@ -410,6 +431,7 @@ add_for_tenjiku()
 add_for_dai()
 add_for_dai_dai()
 add_for_maka_dai_dai()
+add_for_tai()
 print("We have created the image files")
 
 
@@ -428,4 +450,5 @@ add_for_tenjiku()
 add_for_dai()
 add_for_dai_dai()
 add_for_maka_dai_dai()
+add_for_tai()
 print("We have created the image files")
