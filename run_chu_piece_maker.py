@@ -64,6 +64,14 @@ def add_for_tai():
     create_piece_size_B(piecename="turtle_snake")
     create_piece_size_B(piecename="turtle_snake", rotate=True)
 
+    #Non-promoted pieces - in Chu we had created promoted only
+    create_piece_size_B(piecename="white_horse")
+    create_piece_size_B(piecename="white_horse", rotate=True)
+    create_piece_size_B(piecename="whale")
+    create_piece_size_B(piecename="whale", rotate=True)
+    create_piece_size_B(piecename="flying_ox")
+    create_piece_size_B(piecename="flying_ox", rotate=True)
+
 def add_for_maka_dai_dai():
     create_piece_size_D(piecename="deva")
     create_piece_size_D(piecename="deva", rotate=True)
