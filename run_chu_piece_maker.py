@@ -71,6 +71,8 @@ def add_for_tai():
     create_piece_size_B(piecename="whale", rotate=True)
     create_piece_size_B(piecename="flying_ox")
     create_piece_size_B(piecename="flying_ox", rotate=True)
+    create_piece_size_C(piecename="prince")
+    create_piece_size_C(piecename="prince", rotate=True)
 
 def add_for_maka_dai_dai():
     create_piece_size_D(piecename="deva")
