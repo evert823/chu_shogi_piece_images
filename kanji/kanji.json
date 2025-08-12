@@ -550,5 +550,705 @@
     "free_wolf": {
         "full_kanji": "奔狼",
         "single_kanji": "."
+    },
+    "rear_standard": {
+        "full_kanji": "後旗",
+        "single_kanji": "."
+    },
+    "ceramic_dove": {
+        "full_kanji": "鳩盤",
+        "single_kanji": "."
+    },
+    "earth_dragon": {
+        "full_kanji": "地龍",
+        "single_kanji": "."
+    },
+    "running_horse": {
+        "full_kanji": "走馬",
+        "single_kanji": "."
+    },
+    "beast_cadet": {
+        "full_kanji": "獣曹",
+        "single_kanji": "."
+    },
+    "right_mountain_eagle": {
+        "full_kanji": "右山鷲",
+        "single_kanji": "."
+    },
+    "left_mountain_eagle": {
+        "full_kanji": "左山鷲",
+        "single_kanji": "."
+    },
+    "running_rabbit": {
+        "full_kanji": "走兎",
+        "single_kanji": "."
+    },
+    "turtle_dove": {
+        "full_kanji": "山鳩",
+        "single_kanji": "."
+    },
+    "flying_swallow": {
+        "full_kanji": "飛燕",
+        "single_kanji": "."
+    },
+    "captive_officer": {
+        "full_kanji": "禽吏",
+        "single_kanji": "."
+    },
+    "rain_dragon": {
+        "full_kanji": "雨龍",
+        "single_kanji": "."
+    },
+    "forest_demon": {
+        "full_kanji": "森鬼",
+        "single_kanji": "."
+    },
+    "mountain_stag": {
+        "full_kanji": "山鹿",
+        "single_kanji": "."
+    },
+    "running_pup": {
+        "full_kanji": "走狗",
+        "single_kanji": "."
+    },
+    "running_serpent": {
+        "full_kanji": "走蛇",
+        "single_kanji": "."
+    },
+    "side_serpent": {
+        "full_kanji": "横蛇",
+        "single_kanji": "."
+    },
+    "great_dove": {
+        "full_kanji": "大鳩",
+        "single_kanji": "."
+    },
+    "running_tiger": {
+        "full_kanji": "走虎",
+        "single_kanji": "."
+    },
+    "running_bear": {
+        "full_kanji": "走熊",
+        "single_kanji": "."
+    },
+    "gold_chariot": {
+        "full_kanji": "金車",
+        "single_kanji": "."
+    },
+    "running_stag": {
+        "full_kanji": "走鹿",
+        "single_kanji": "."
+    },
+    "running_wolf": {
+        "full_kanji": "走狼",
+        "single_kanji": "."
+    },
+    "right_tiger": {
+        "full_kanji": "右虎",
+        "single_kanji": "."
+    },
+    "left_tiger": {
+        "full_kanji": "左虎",
+        "single_kanji": "."
+    },
+    "right_dragon": {
+        "full_kanji": "右龍",
+        "single_kanji": "."
+    },
+    "left_dragon": {
+        "full_kanji": "左龍",
+        "single_kanji": "."
+    },
+    "beast_officer": {
+        "full_kanji": "獣吏",
+        "single_kanji": "."
+    },
+    "wind_dragon": {
+        "full_kanji": "風龍",
+        "single_kanji": "."
+    },
+    "free_pup": {
+        "full_kanji": "奔狗",
+        "single_kanji": "."
+    },
+    "water_dragon": {
+        "full_kanji": "水龍",
+        "single_kanji": "."
+    },
+    "fire_dragon": {
+        "full_kanji": "火龍",
+        "single_kanji": "."
+    },
+    "phoenix_master": {
+        "full_kanji": "鳳師",
+        "single_kanji": "."
+    },
+    "kirin_master": {
+        "full_kanji": "麟師",
+        "single_kanji": "."
+    },
+    "silver_chariot": {
+        "full_kanji": "銀車",
+        "single_kanji": "."
+    },
+    "vertical_bear": {
+        "full_kanji": "竪熊",
+        "single_kanji": "."
+    },
+    "pig_general": {
+        "full_kanji": "豚将",
+        "single_kanji": "."
+    },
+    "chicken_general": {
+        "full_kanji": "鶏将",
+        "single_kanji": "."
+    },
+    "pup_general": {
+        "full_kanji": "狗将",
+        "single_kanji": "."
+    },
+    "horse_general": {
+        "full_kanji": "馬将",
+        "single_kanji": "."
+    },
+    "ox_general": {
+        "full_kanji": "牛将",
+        "single_kanji": "."
+    },
+    "center_standard": {
+        "full_kanji": "中旗",
+        "single_kanji": "."
+    },
+    "side_boar": {
+        "full_kanji": "横猪",
+        "single_kanji": "."
+    },
+    "captive_cadet": {
+        "full_kanji": "禽曹",
+        "single_kanji": "."
+    },
+    "great_stag": {
+        "full_kanji": "大鹿",
+        "single_kanji": "."
+    },
+    "violent_dragon": {
+        "full_kanji": "猛龍",
+        "single_kanji": "."
+    },
+    "woodland_demon": {
+        "full_kanji": "林鬼",
+        "single_kanji": "."
+    },
+    "stone_chariot": {
+        "full_kanji": "石車",
+        "single_kanji": "."
+    },
+    "cloud_eagle": {
+        "full_kanji": "雲鷲",
+        "single_kanji": "."
+    },
+    "side_wolf": {
+        "full_kanji": "横狼",
+        "single_kanji": "."
+    },
+    "flying_cat": {
+        "full_kanji": "飛猫",
+        "single_kanji": "."
+    },
+    "mountain_falcon": {
+        "full_kanji": "山鷹",
+        "single_kanji": "."
+    },
+    "vertical_tiger": {
+        "full_kanji": "竪虎",
+        "single_kanji": "."
+    },
+    "little_standard": {
+        "full_kanji": "小旗",
+        "single_kanji": "."
+    },
+    "cloud_dragon": {
+        "full_kanji": "雲龍",
+        "single_kanji": "."
+    },
+    "copper_chariot": {
+        "full_kanji": "銅車",
+        "single_kanji": "."
+    },
+    "wood_chariot": {
+        "full_kanji": "木車",
+        "single_kanji": "."
+    },
+    "flying_goose": {
+        "full_kanji": "鳫飛",
+        "single_kanji": "."
+    },
+    "strutting_crow": {
+        "full_kanji": "烏行",
+        "single_kanji": "."
+    },
+    "blind_dog": {
+        "full_kanji": "盲犬",
+        "single_kanji": "."
+    },
+    "water_general": {
+        "full_kanji": "水将",
+        "single_kanji": "."
+    },
+    "fire_general": {
+        "full_kanji": "火将",
+        "single_kanji": "."
+    },
+    "little_turtle": {
+        "full_kanji": "小亀",
+        "single_kanji": "."
+    },
+    "great_turtle": {
+        "full_kanji": "大亀",
+        "single_kanji": "."
+    },
+    "tile_chariot": {
+        "full_kanji": "瓦車",
+        "single_kanji": "."
+    },
+    "vertical_wolf": {
+        "full_kanji": "竪狼",
+        "single_kanji": "."
+    },
+    "side_ox": {
+        "full_kanji": "横牛",
+        "single_kanji": "."
+    },
+    "liberated_horse": {
+        "full_kanji": "風馬",
+        "single_kanji": "."
+    },
+    "flying_cock": {
+        "full_kanji": "鶏飛",
+        "single_kanji": "."
+    },
+    "violent_stag": {
+        "full_kanji": "猛鹿",
+        "single_kanji": "."
+    },
+    "violent_wolf": {
+        "full_kanji": "猛狼",
+        "single_kanji": "."
+    },
+    "treacherous_fox": {
+        "full_kanji": "隠狐",
+        "single_kanji": "."
+    },
+    "center_master": {
+        "full_kanji": "中師",
+        "single_kanji": "."
+    },
+    "roc_master": {
+        "full_kanji": "鵬師",
+        "single_kanji": "."
+    },
+    "earth_chariot": {
+        "full_kanji": "土車",
+        "single_kanji": "."
+    },
+    "horseman": {
+        "full_kanji": "騎兵",
+        "single_kanji": "."
+    },
+    "swooping_owl": {
+        "full_kanji": "鴟行",
+        "single_kanji": "."
+    },
+    "climbing_monkey": {
+        "full_kanji": "登猿",
+        "single_kanji": "."
+    },
+    "swallows_wings": {
+        "full_kanji": "燕羽",
+        "single_kanji": "."
+    },
+    "oxcart": {
+        "full_kanji": "牛車",
+        "single_kanji": "."
+    },
+    "wind_general": {
+        "full_kanji": "風将",
+        "single_kanji": "."
+    },
+    "river_general": {
+        "full_kanji": "川将",
+        "single_kanji": "."
+    },
+    "mountain_general": {
+        "full_kanji": "山将",
+        "single_kanji": "."
+    },
+    "horse_soldier": {
+        "full_kanji": "馬兵",
+        "single_kanji": "."
+    },
+    "ox_soldier": {
+        "full_kanji": "牛兵",
+        "single_kanji": "."
+    },
+    "boar_soldier": {
+        "full_kanji": "猪兵",
+        "single_kanji": "."
+    },
+    "leopard_soldier": {
+        "full_kanji": "豹兵",
+        "single_kanji": "."
+    },
+    "bear_soldier": {
+        "full_kanji": "熊兵",
+        "single_kanji": "."
+    },
+    "great_standard": {
+        "full_kanji": "大旗",
+        "single_kanji": "."
+    },
+    "great_master": {
+        "full_kanji": "大師",
+        "single_kanji": "."
+    },
+    "side_monkey": {
+        "full_kanji": "横猿",
+        "single_kanji": "."
+    },
+    "longbow_soldier": {
+        "full_kanji": "弩兵",
+        "single_kanji": "."
+    },
+    "vertical_pup": {
+        "full_kanji": "竪狗",
+        "single_kanji": "."
+    },
+    "vertical_horse": {
+        "full_kanji": "竪馬",
+        "single_kanji": "."
+    },
+    "burning_soldier": {
+        "full_kanji": "炮兵",
+        "single_kanji": "."
+    },
+    "sword_soldier": {
+        "full_kanji": "刀兵",
+        "single_kanji": "."
+    },
+    "spear_soldier": {
+        "full_kanji": "鎗兵",
+        "single_kanji": "."
+    },
+    "vertical_leopard": {
+        "full_kanji": "竪豹",
+        "single_kanji": "."
+    },
+    "crossbow_soldier": {
+        "full_kanji": "弓兵",
+        "single_kanji": "."
+    },
+    "roaring_dog": {
+        "full_kanji": "吼犬",
+        "single_kanji": "."
+    },
+    "right_army": {
+        "full_kanji": "右軍",
+        "single_kanji": "."
+    },
+    "left_army": {
+        "full_kanji": "左軍",
+        "single_kanji": "."
+    },
+    "free_fire": {
+        "full_kanji": "奔火",
+        "single_kanji": "."
+    },
+    "great_whale": {
+        "full_kanji": "大鯨",
+        "single_kanji": "."
+    },
+    "divine_tiger": {
+        "full_kanji": "神虎",
+        "single_kanji": "."
+    },
+    "divine_turtle": {
+        "full_kanji": "神亀",
+        "single_kanji": "."
+    },
+    "elephant_king": {
+        "full_kanji": "象王",
+        "single_kanji": "."
+    },
+    "captive_bird": {
+        "full_kanji": "禽鳥",
+        "single_kanji": "."
+    },
+    "thunder_runner": {
+        "full_kanji": "雷走",
+        "single_kanji": "."
+    },
+    "great_shark": {
+        "full_kanji": "大鱗",
+        "single_kanji": "."
+    },
+    "playful_cockatoo": {
+        "full_kanji": "遊䳇",
+        "single_kanji": "."
+    },
+    "running_dragon": {
+        "full_kanji": "走龍",
+        "single_kanji": "."
+    },
+    "free_stag": {
+        "full_kanji": "奔鹿",
+        "single_kanji": "."
+    },
+    "rain_demon": {
+        "full_kanji": "霖鬼",
+        "single_kanji": "."
+    },
+    "flying_crocodile": {
+        "full_kanji": "飛鰐",
+        "single_kanji": "."
+    },
+    "beast_bird": {
+        "full_kanji": "獣鳥",
+        "single_kanji": "."
+    },
+    "free_dog": {
+        "full_kanji": "奔犬",
+        "single_kanji": "."
+    },
+    "goose_wing": {
+        "full_kanji": "鴻翼",
+        "single_kanji": "."
+    },
+    "free_pig": {
+        "full_kanji": "奔豚",
+        "single_kanji": "."
+    },
+    "free_chicken": {
+        "full_kanji": "奔鶏",
+        "single_kanji": "."
+    },
+    "free_horse": {
+        "full_kanji": "奔馬",
+        "single_kanji": "."
+    },
+    "free_ox": {
+        "full_kanji": "奔牛",
+        "single_kanji": "."
+    },
+    "right_phoenix": {
+        "full_kanji": "右鵰",
+        "single_kanji": "."
+    },
+    "walking_heron": {
+        "full_kanji": "歩䳲",
+        "single_kanji": "."
+    },
+    "strong_eagle": {
+        "full_kanji": "勁鷲",
+        "single_kanji": "."
+    },
+    "cavalier": {
+        "full_kanji": "騎士",
+        "single_kanji": "."
+    },
+    "copper_elephant": {
+        "full_kanji": "銅象",
+        "single_kanji": "."
+    },
+    "burning_chariot": {
+        "full_kanji": "炮車",
+        "single_kanji": "."
+    },
+    "tiger_soldier": {
+        "full_kanji": "虎兵",
+        "single_kanji": "."
+    },
+    "ancient_dragon": {
+        "full_kanji": "元龍",
+        "single_kanji": "."
+    },
+    "free_bird": {
+        "full_kanji": "奔翅",
+        "single_kanji": "."
+    },
+    "wind_snapping_turtle": {
+        "full_kanji": "風鼈",
+        "single_kanji": "."
+    },
+    "great_horse": {
+        "full_kanji": "大駒",
+        "single_kanji": "."
+    },
+    "left_dog": {
+        "full_kanji": "左犬",
+        "single_kanji": "."
+    },
+    "right_dog": {
+        "full_kanji": "右犬",
+        "single_kanji": "."
+    },
+    "great_dream_eater": {
+        "full_kanji": "大獏",
+        "single_kanji": "."
+    },
+    "flying_falcon": {
+        "full_kanji": "飛鷹",
+        "single_kanji": "."
+    },
+    "treasure_turtle": {
+        "full_kanji": "宝亀",
+        "single_kanji": "."
+    },
+    "spirit_turtle": {
+        "full_kanji": "霊亀",
+        "single_kanji": "."
+    },
+    "running_tile": {
+        "full_kanji": "走瓦",
+        "single_kanji": "."
+    },
+    "great_bear": {
+        "full_kanji": "大熊",
+        "single_kanji": "."
+    },
+    "venomous_wolf": {
+        "full_kanji": "毒狼",
+        "single_kanji": "."
+    },
+    "heavenly_horse": {
+        "full_kanji": "天馬",
+        "single_kanji": "."
+    },
+    "raiding_falcon": {
+        "full_kanji": "延鷹",
+        "single_kanji": "."
+    },
+    "rushing_boar": {
+        "full_kanji": "行猪",
+        "single_kanji": "."
+    },
+    "bears_eyes": {
+        "full_kanji": "熊眼",
+        "single_kanji": "."
+    },
+    "mountain_crane": {
+        "full_kanji": "山鶻",
+        "single_kanji": "."
+    },
+    "young_bird": {
+        "full_kanji": "𦬨鳥",
+        "single_kanji": "."
+    },
+    "divine_sparrow": {
+        "full_kanji": "神雀",
+        "single_kanji": "."
+    },
+    "divine_dragon": {
+        "full_kanji": "神龍",
+        "single_kanji": "."
+    },
+    "gliding_swallow": {
+        "full_kanji": "燕行",
+        "single_kanji": "."
+    },
+    "plodding_ox": {
+        "full_kanji": "歬牛",
+        "single_kanji": "."
+    },
+    "bird_of_paradise": {
+        "full_kanji": "時鳥",
+        "single_kanji": "."
+    },
+    "strong_chariot": {
+        "full_kanji": "強車",
+        "single_kanji": "."
+    },
+    "coiled_dragon": {
+        "full_kanji": "蟠龍",
+        "single_kanji": "."
+    },
+    "violent_wind": {
+        "full_kanji": "暴風",
+        "single_kanji": "."
+    },
+    "chinese_river": {
+        "full_kanji": "淮川",
+        "single_kanji": "."
+    },
+    "peaceful_mountain": {
+        "full_kanji": "泰山",
+        "single_kanji": "."
+    },
+    "running_ox": {
+        "full_kanji": "走牛",
+        "single_kanji": "."
+    },
+    "running_boar": {
+        "full_kanji": "走猪",
+        "single_kanji": "."
+    },
+    "running_leopard": {
+        "full_kanji": "走豹",
+        "single_kanji": "."
+    },
+    "strong_bear": {
+        "full_kanji": "強熊",
+        "single_kanji": "."
+    },
+    "right_iron_chariot": {
+        "full_kanji": "右鉄車",
+        "single_kanji": "."
+    },
+    "left_iron_chariot": {
+        "full_kanji": "左鉄車",
+        "single_kanji": "."
+    },
+    "fire_ox": {
+        "full_kanji": "火牛",
+        "single_kanji": "."
+    },
+    "longbow_general": {
+        "full_kanji": "弩将",
+        "single_kanji": "."
+    },
+    "leopard_king": {
+        "full_kanji": "豹王",
+        "single_kanji": "."
+    },
+    "burning_general": {
+        "full_kanji": "炮将",
+        "single_kanji": "."
+    },
+    "sword_general": {
+        "full_kanji": "刀将",
+        "single_kanji": "."
+    },
+    "great_falcon": {
+        "full_kanji": "大鷹",
+        "single_kanji": "."
+    },
+    "great_eagle": {
+        "full_kanji": "大鷲",
+        "single_kanji": "."
+    },
+    "spear_general": {
+        "full_kanji": "鎗将",
+        "single_kanji": "."
+    },
+    "great_leopard": {
+        "full_kanji": "大豹",
+        "single_kanji": "."
+    },
+    "great_tiger": {
+        "full_kanji": "大虎",
+        "single_kanji": "."
+    },
+    "crossbow_general": {
+        "full_kanji": "弓将",
+        "single_kanji": "."
     }
 }
