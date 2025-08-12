@@ -1001,6 +1001,8 @@ add_for_dai()
 add_for_dai_dai()
 add_for_maka_dai_dai()
 add_for_tai()
+#When arriving at Taikyoku, the single kanji become too problematic
+#add_for_taikyoku()
 print("We have created the image files")
 
 
@@ -1020,4 +1022,5 @@ add_for_dai()
 add_for_dai_dai()
 add_for_maka_dai_dai()
 add_for_tai()
+add_for_taikyoku()
 print("We have created the image files")
