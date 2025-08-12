@@ -47,8 +47,6 @@ def create_piece_size_D(piecename: str, rotate: bool = False, ispromoted: bool =
 
 def add_for_taikyoku():
     #PLS NOTE vast majority of these pieces is also a potentially promoted piece!
-    create_piece_size_C(piecename="piecename", ispromoted=True)
-    create_piece_size_C(piecename="piecename", rotate=True, ispromoted=True)
     create_piece_size_C(piecename="rear_standard")
     create_piece_size_C(piecename="rear_standard", rotate=True)
     create_piece_size_C(piecename="rear_standard", ispromoted=True)
