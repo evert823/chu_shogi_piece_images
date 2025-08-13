@@ -178,16 +178,17 @@ class ChuPieceMaker():
         elif len(self.kanji_data[piecename]['full_kanji']) > 2:
             #FOR NOW this only works for tiletype C
             #TODO properly handle kanji length 3 (Heavenly Tetrarch)
-            y2 = 4
-            f2 = 19
+            y2 = 9 #4
+            f2 = 46 #19
+            delta_x = 9 #4
             mymarge = 0
             font = ImageFont.truetype("C:\\Windows\\Fonts\\YuGothB.ttc", f2)
             mytext = self.kanji_data[piecename]['full_kanji'][0]
-            draw.text((x + 4, y2),mytext,fontcolor,font=font)
+            draw.text((x + delta_x, y2),mytext,fontcolor,font=font)
             mytext = self.kanji_data[piecename]['full_kanji'][1]
-            draw.text((x + 4, y2 + f2 + mymarge),mytext,fontcolor,font=font)
+            draw.text((x + delta_x, y2 + f2 + mymarge),mytext,fontcolor,font=font)
             mytext = self.kanji_data[piecename]['full_kanji'][2]
-            draw.text((x + 4, y2 + 2 * (f2 + mymarge)),mytext,fontcolor,font=font)
+            draw.text((x + delta_x, y2 + 2 * (f2 + mymarge)),mytext,fontcolor,font=font)
         else:
             mytext = self.kanji_data[piecename]['full_kanji'][0]
             if piecename in ["howling_dog"]:
