@@ -59,6 +59,20 @@ class ChuPieceMaker():
         json.dump(self.dimension_data, file2, ensure_ascii=False, indent=4)
         file2.close()
 
+    def create_vacant_notfound_tiles(self):
+        new_img_vacant = Image.new("RGB", (self.fullsquarewidth, self.fullsquareheight), self.boardcolor)
+        new_img_notfound = Image.new("RGB", (self.fullsquarewidth, self.fullsquareheight), (0, 0, 0))
+
+        fontsize = self.fullsquarewidth // 3
+        x = self.fullsquarewidth // 3
+        y = self.fullsquareheight // 3
+        font = ImageFont.truetype("C:\\Windows\\Fonts\\arial.ttf", fontsize)
+        draw = ImageDraw.Draw(new_img_notfound)
+        draw.text((x, y),"404",(255, 0, 0),font=font)
+
+        return new_img_vacant, new_img_notfound
+
+
     def load_image(self, filename):
         #Under the hat, pillow handles formats like jpg, bmp, png
         myimage = Image.open(filename, mode='r')

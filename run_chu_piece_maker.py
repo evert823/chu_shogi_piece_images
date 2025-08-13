@@ -978,6 +978,11 @@ def create_complete_chu_set():
     create_piece_size_B(piecename="whale", rotate=True, ispromoted=True)
     create_piece_size_B(piecename="white_horse", rotate=True, ispromoted=True)
 
+def create_vacant_notfound_tiles():
+    new_img_vacant, new_img_notfound = MyChuPieceMaker.create_vacant_notfound_tiles()
+    MyChuPieceMaker.save_image(new_img_vacant, f"{outputpath}vacant.png")
+    MyChuPieceMaker.save_image(new_img_notfound, f"{outputpath}_notfound.png")
+
 MyChuPieceMaker = ChuPieceMaker()
 
 #MyChuPieceMaker.load_dimensions(".\\input\\dimensions_542_590.json")
@@ -993,6 +998,7 @@ print(f"Loaded template image with width {myimage.width} height {myimage.height}
 myimage = MyChuPieceMaker.fill_from_point(myimage, 266, 248, MyChuPieceMaker.piececolor)
 MyChuPieceMaker.mycolouredtemplate = MyChuPieceMaker.fill_from_point(myimage, 4, 4, MyChuPieceMaker.boardcolor)
 print("We have created the coloured template")
+create_vacant_notfound_tiles()
 create_complete_chu_set()
 add_for_tenjiku()
 add_for_dai()
@@ -1014,6 +1020,7 @@ print(f"Loaded template image with width {myimage.width} height {myimage.height}
 myimage = MyChuPieceMaker.fill_from_point(myimage, 266, 248, MyChuPieceMaker.piececolor)
 MyChuPieceMaker.mycolouredtemplate = MyChuPieceMaker.fill_from_point(myimage, 4, 4, MyChuPieceMaker.boardcolor)
 print("We have created the coloured template")
+create_vacant_notfound_tiles()
 create_complete_chu_set()
 add_for_tenjiku()
 add_for_dai()
