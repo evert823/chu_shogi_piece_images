@@ -37,12 +37,14 @@ class ChuPieceMaker():
         file1.close()
         self.fullsquarewidth = self.dimension_data['fullsquarewidth']
         self.fullsquareheight = self.dimension_data['fullsquareheight']
-        assert self.dimension_data['tiletypes'][0]['tiletypename'] == "A_tokinstyle"
-        assert self.dimension_data['tiletypes'][1]['tiletypename'] == "A"
-        assert self.dimension_data['tiletypes'][2]['tiletypename'] == "B"
-        assert self.dimension_data['tiletypes'][3]['tiletypename'] == "B_plus"
-        assert self.dimension_data['tiletypes'][4]['tiletypename'] == "C"
-        assert self.dimension_data['tiletypes'][5]['tiletypename'] == "D"
+        a = [self.dimension_data['tiletypes'][i]['tiletypename'] for i in range(len(self.dimension_data['tiletypes']))]
+        print(a)
+        if set(a) == {'A_tokinstyle', 'A', 'B', 'B_plus', 'C', 'D'}:
+            pass
+        elif set(a) == {'A_tokinstyle', 'A', 'B', 'B_plus', 'C', 'C_3kanji', 'D'}:
+            pass
+        else:
+            raise Exception("Unexpected or missing values in tiletype name")
 
     def resize_and_save_dimensions(self, filename="", scalefactor=7.4):
         self.dimension_data['fullsquarewidth'] = int(self.dimension_data['fullsquarewidth'] // scalefactor)
@@ -154,8 +156,8 @@ class ChuPieceMaker():
         return new_img
 
     def put_kanji(self, pimage: Image, x: int, y: int, piecename: str,
-                  fontsize: int, fontcolor: tuple, single_kanji=False):
-        mymarge = self.dimension_data['marge_to_2nd_kanji']
+                  fontsize: int, fontcolor: tuple,
+                  single_kanji=False, marge_to_2nd_kanji=0):
         draw = ImageDraw.Draw(pimage)
 
         if fontsize <= 22:
@@ -175,20 +177,6 @@ class ChuPieceMaker():
                 draw.text((x, y),mytext,fontcolor,font=font_escape)
             else:
                 draw.text((x, y),mytext,fontcolor,font=font)
-        elif len(self.kanji_data[piecename]['full_kanji']) > 2:
-            #FOR NOW this only works for tiletype C
-            #TODO properly handle kanji length 3 (Heavenly Tetrarch)
-            y2 = 9 #4
-            f2 = 46 #19
-            delta_x = 9 #4
-            mymarge = 0
-            font = ImageFont.truetype("C:\\Windows\\Fonts\\YuGothB.ttc", f2)
-            mytext = self.kanji_data[piecename]['full_kanji'][0]
-            draw.text((x + delta_x, y2),mytext,fontcolor,font=font)
-            mytext = self.kanji_data[piecename]['full_kanji'][1]
-            draw.text((x + delta_x, y2 + f2 + mymarge),mytext,fontcolor,font=font)
-            mytext = self.kanji_data[piecename]['full_kanji'][2]
-            draw.text((x + delta_x, y2 + 2 * (f2 + mymarge)),mytext,fontcolor,font=font)
         else:
             mytext = self.kanji_data[piecename]['full_kanji'][0]
             if piecename in ["howling_dog"]:
@@ -196,7 +184,10 @@ class ChuPieceMaker():
             else:
                 draw.text((x, y),mytext,fontcolor,font=font)
             mytext = self.kanji_data[piecename]['full_kanji'][1]
-            draw.text((x, y + fontsize + mymarge),mytext,fontcolor,font=font)
+            draw.text((x, y + fontsize + marge_to_2nd_kanji),mytext,fontcolor,font=font)
+            if len(self.kanji_data[piecename]['full_kanji']) > 2:
+                mytext = self.kanji_data[piecename]['full_kanji'][2]
+                draw.text((x, y + 2 * (fontsize + marge_to_2nd_kanji)),mytext,fontcolor,font=font)
 
     def resize_image(self, pimage: Image, new_width: int, new_height: int):
         if pimage.width == new_width and pimage.height == new_height:
@@ -217,6 +208,11 @@ class ChuPieceMaker():
         fs = self.dimension_data['tiletypes'][tiletype_idx]['font_size']
         single_kanji = self.dimension_data['tiletypes'][tiletype_idx]['single_kanji']
 
+        try:
+            marge_to_2nd_kanji = self.dimension_data['tiletypes'][tiletype_idx]['marge_to_2nd_kanji']
+        except:
+            marge_to_2nd_kanji = self.dimension_data['marge_to_2nd_kanji']
+
         #for tokin-style we always use single kanji
         if ispromoted:
             usefontcolor = (255, 0, 0)
@@ -224,7 +220,8 @@ class ChuPieceMaker():
             usefontcolor = (0, 0, 0)
         mypieceimage = self.resize_image(self.mycolouredtemplate, w, h)
         self.put_kanji(pimage=mypieceimage, x=kx, y=ky, piecename=piecename,
-                                fontsize=fs, fontcolor=usefontcolor, single_kanji=single_kanji)
+                                fontsize=fs, fontcolor=usefontcolor,
+                                single_kanji=single_kanji, marge_to_2nd_kanji=marge_to_2nd_kanji)
         mypieceimage = self.enlargesquare(mypieceimage)
         if rotate == True:
             mypieceimage = mypieceimage.rotate(180)

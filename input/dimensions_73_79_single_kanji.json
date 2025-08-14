@@ -49,6 +49,15 @@
             "font_size": 31
         },
         {
+            "tiletypename": "C_3kanji",
+            "single_kanji": true,
+            "resized_template_width": 64,
+            "resized_template_height": 64,
+            "put_kanji_x": 15,
+            "put_kanji_y": 21,
+            "font_size": 31
+        },
+        {
             "tiletypename": "D",
             "single_kanji": true,
             "resized_template_width": 73,
