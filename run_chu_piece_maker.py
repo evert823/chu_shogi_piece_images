@@ -992,7 +992,7 @@ MyChuPieceMaker = ChuPieceMaker()
 #MyChuPieceMaker.load_dimensions(".\\input\\dimensions_542_590.json")
 #MyChuPieceMaker.load_dimensions(".\\input\\dimensions_542_590_single_kanji.json")
 
-outputpath = ".\\output_set1\\"
+outputpath = "..\\onlineboardpainter\\resources\\shogi_set1\\"
 MyChuPieceMaker.load_dimensions(".\\input\\dimensions_180_196_single_kanji.json")
 print(f"Loaded dimension data for tiletypes {[item['tiletypename'] for item in MyChuPieceMaker.dimension_data['tiletypes']]}")
 MyChuPieceMaker.load_kanji(".\\kanji\\kanji.json")
@@ -1014,7 +1014,7 @@ add_for_tai()
 print("We have created the image files")
 
 
-outputpath = ".\\output_set2\\"
+outputpath = "..\\onlineboardpainter\\resources\\shogi_set2\\"
 MyChuPieceMaker.load_dimensions(".\\input\\dimensions_180_196.json")
 print(f"Loaded dimension data for tiletypes {[item['tiletypename'] for item in MyChuPieceMaker.dimension_data['tiletypes']]}")
 MyChuPieceMaker.load_kanji(".\\kanji\\kanji.json")
